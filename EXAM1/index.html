@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: arial;
+        }
+        .main{
+            height: 600px;
+            width: 800px;
+            background-color: #eceaea;
+            margin: 0 auto;
+            border-radius: 20px;
+        }
+
+        .heading{
+           text-align: center;
+           padding-top: 5%;
+           text-decoration: underline;
+           text-shadow: 3px 1px rgba(128, 128, 128, 0.627);
+        }
+
+        .form{
+            padding-left: 6%;
+            background-color: rgb(128, 128, 225);
+            height: 350px;
+            width: 80%;
+            padding-top: 8%;
+            margin-top: 5%;
+            margin-left: 6.7%;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px -2px gray;
+        }
+
+        .text{
+            height: 20px;
+            width: 60%;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding-left: 1%;
+            margin-left: 4.5%;
+        }
+
+        .email{
+            height: 20px;
+            width: 60%;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding-left: 1%;
+            margin-left:5%;
+            margin-top: 3%;
+        }
+
+        .password{
+            height: 20px;
+            width: 60%;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding-left: 1%;
+            margin-top: 3%;
+            margin-left: 0.6%;
+        }
+
+        .checkbox{
+            margin-top: 3%;
+            margin-left: 1.1%;
+        }
+
+        .radio{
+            margin-top: 3%;
+            margin-left: 2.8%;
+        }
+
+        .file{
+            margin-top: 3%;
+            margin-left: 4.2%;
+        }
+
+        .select{
+            margin-top: 3%;
+            margin-left:6%;
+        }
+
+        .submit{
+            height: 25px;
+            width: 12%;
+            border-radius: 5px;
+            border: none;
+            margin-top: 3%;
+            margin-left: 20%;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .reset{
+            height: 25px;
+            width: 12%;
+            border-radius: 5px;
+            border: none;
+            margin-top: 3%;
+            margin-left: 2%;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .ok{
+            height: 25px;
+            width: 12%;
+            border-radius: 5px;
+            border: none;
+            margin-top: 3%;
+            margin-left: 2%;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 class="heading">Login Form</h1>
+
+        <div class="form">
+            <p>Enter Name : <input type="text" placeholder="Enter Name" class="text" required></p>
+
+            <p>Enter Email : <input type="email" placeholder="Enter Email" class="email" required></p>
+
+            <p>Enter password : <input type="password" placeholder="Enter password" class="password" required></p>
+
+            <p>Select Hobbies : <input type="checkbox" class="checkbox"> Reading &nbsp;&nbsp;<input type="checkbox"> Dancing &nbsp;&nbsp;<input type="checkbox"> Writing</p>
+
+            <p>Enter Gender : <input type="radio" class="radio" value="Male" name="gender"> Male&nbsp;&nbsp;<input type="radio" name="gender" value="Female"> Female &nbsp;&nbsp;<input type="radio" name="gender" value="Other"> Other</p>
+            
+            <p>Choose File : <input type="file" class="file"></p>
+
+            <p>Select City : 
+                <select class="select">
+                    <option>Amreli</option>
+                    <option>Rajkot</option>
+                    <option>Junagadh</option>
+                </select>
+            </p>
+
+            <p><input type="submit" class="submit"> <input type="reset" class="reset"> <button class="ok">OK</button></p>
+
+            
+        </div>
+    </div>
+</body>
+</html>
